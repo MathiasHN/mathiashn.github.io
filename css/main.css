@@ -9,7 +9,7 @@ textarea {
 }
 
 html {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.2;
     font: helvetica, sans-serif;
 }
@@ -29,13 +29,6 @@ html {
 {
 }
 
-.casedetails
-{
-    margin-left: 0%;
-    margin-bottom: 10%;
-    margin-top: 1%;
-    max-width: 420px;
-}
 
 a.projectlink
 {
@@ -51,6 +44,18 @@ a.projectlink:hover
     text-decoration: none;
 }
 
+.tag
+{
+    display: inline-block;
+    background-color: #f0f0f0;
+    width: auto;
+    border-radius: 20px;
+    flex: 0 0 auto;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    margin-bottom: 6px;
+}
 
 ::-moz-selection {
     background: #000;
@@ -119,6 +124,68 @@ a.projectlink:hover
 }
 
 
+* {
+  box-sizing: border-box;
+}
+
+/* Project Columns */
+
+.row
+{
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+
+.column_project_title
+{
+    float: left;
+    width: 50%;
+}
+
+.column_project_description
+{
+    float: left;
+    width: 40%;
+}
+
+.column_project_year
+{
+    float: left;
+    width: 10%;
+    text-align: right;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding-right: 2%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout for columns */
+@media screen and (max-width: 640px) {
+    .column_project_title {
+    width: 100%;
+  }
+    .column_project_description {
+    width: 100%;
+  }
+    .column_project_year {
+    width: 100%;
+    text-align: left;
+  }
+    .column {
+    width: 100%;
+  }
+}
+
+
 h1
 {
     font-weight: 500;
@@ -132,18 +199,18 @@ h1
 h2
 {
     font-weight: normal;
-    font-size: 1.2em;
-    line-height: 1.15em;
+    font-size: 1.8em;
+    line-height: 1em;
     letter-spacing: -0.6px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 p
 {
     font-weight: normal;
-    font-size: 1.2em;
-    line-height: 1.15em;
-    letter-spacing: -0.6px;
+    font-size: 1em;
+    line-height: 1.1em;
+    letter-spacing: -0.4px;
     margin-top: 0px;
 }
 
@@ -151,6 +218,10 @@ h6
 {
     margin-top: 0px;
     margin-bottom: 0px;
+    font-weight: normal;
+    font-size: 0.8em;
+    line-height: 1.1em;
+    letter-spacing: -0.4px;
 }
 
 a
