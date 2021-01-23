@@ -106,6 +106,8 @@ a:hover
 {
     text-decoration: none;
     color: 3E3E3E;
+    background-image: url(img/arrow.svg);
+    background-position: right top;
 }
 
 
